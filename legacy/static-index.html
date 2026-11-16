@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes marquee{0%{transform:translateX(0%);}100%{transform:translateX(-50%);}}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary":"#e9bf97","tertiary-fixed-dim":"#f5bc7d","surface-container-high":"#292a2d","on-error-container":"#ffdad6","surface-variant":"#343538","editorial-bronze":"#7A5430","secondary-container":"#5e4122","surface-bright":"#38393c","background":"#121316","on-secondary":"#442b0e","inverse-on-surface":"#2f3034","surface-dim":"#121316","inverse-primary":"#855314","surface-container-lowest":"#0d0e11","stone-muted":"#9A958D","secondary-fixed":"#ffdcbd","surface-tint":"#fcb971","outline":"#9e8e80","on-secondary-fixed":"#2c1600","tertiary-fixed":"#ffddbb","surface-container-low":"#1b1b1f","primary-container":"#d99b56","surface-container":"#1f1f23","on-surface-variant":"#d5c3b4","on-tertiary":"#482900","surface":"#121316","outline-variant":"#514539","on-surface":"#e3e2e6","on-error":"#690005","error":"#ffb4ab","on-tertiary-fixed-variant":"#653e09","charcoal-subtle":"#22252C","on-primary-fixed-variant":"#683d00","on-secondary-fixed-variant":"#5e4122","on-tertiary-container":"#593400","primary-fixed-dim":"#fcb971","on-primary-fixed":"#2c1700","on-primary":"#492900","tertiary":"#f5bc7d","surface-container-highest":"#343538","border-hairline":"rgba(243, 239, 234, 0.12)","on-secondary-container":"#d6ae87","secondary-fixed-dim":"#e9bf97","primary":"#fcb971","on-primary-container":"#5a3400","tertiary-container":"#d39d61","amber-highlight":"#FFB866","on-tertiary-fixed":"#2b1700","inverse-surface":"#e3e2e6","parchment-text":"#F3EFEA","error-container":"#93000a","charcoal-surface":"#16181D","primary-fixed":"#ffdcbc","obsidian-base":"#0A0B0D","on-background":"#e3e2e6"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-desktop":"4rem","gutter-desktop":"2rem","space-2xs":"0.25rem","space-lg":"1.5rem","margin-tablet":"2.5rem","gutter-mobile":"1rem","space-sm":"0.75rem","space-2xl":"4rem","content-max-width":"1440px","space-xs":"0.5rem","space-md":"1rem","space-4xl":"9rem","margin-mobile":"1.25rem","space-3xl":"6rem"},"fontFamily":{"quote-pull":["Newsreader"],"body-sm":["Manrope"],"headline-display":["Newsreader"],"headline-lg":["Newsreader"],"subheading-lg":["Manrope"],"subheading-md":["Manrope"],"headline-sm":["Newsreader"],"label-uppercase":["Space Grotesk"],"label-md":["Space Grotesk"],"headline-lg-mobile":["Newsreader"],"headline-display-mobile":["Newsreader"],"body-md":["Manrope"],"headline-md":["Newsreader"],"body-lg":["Manrope"]},"fontSize":{"quote-pull":["30px",{"lineHeight":"42px","letterSpacing":"-0.01em","fontWeight":"300"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-display":["72px",{"lineHeight":"80px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.015em","fontWeight":"400"}],"subheading-lg":["20px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"300"}],"subheading-md":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"500"}],"label-uppercase":["11px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-lg-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-display-mobile":["40px",{"lineHeight":"46px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-lg":["17px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-obsidian-base font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-obsidian-base/90 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.4)] border-b border-white/5"><div class="h-20 w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop max-w-[1440px] mx-auto flex items-center justify-between"><a class="flex items-baseline gap-space-xs group" href="#"><span class="font-headline-sm text-headline-sm tracking-tight text-parchment-text group-hover:text-primary transition-colors">SM PR GROUP</span><span class="font-label-uppercase text-label-uppercase text-stone-muted tracking-widest uppercase">/ S&amp;C MEDIA</span></a><nav class="hidden xl:flex items-center gap-space-md"><a class="font-label-uppercase text-label-uppercase uppercase px-space-sm py-space-xs text-on-surface hover:text-primary transition-colors" href="#">Overview</a><a class="font-label-uppercase text-label-uppercase uppercase px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" href="#case-studies">Case Studies</a><a class="font-label-uppercase text-label-uppercase uppercase px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" href="#core-services">Core Services</a><a class="font-label-uppercase text-label-uppercase uppercase px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" href="#reel-insights">Reel Insights</a><a class="font-label-uppercase text-label-uppercase uppercase px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center bg-primary-container hover:bg-primary text-obsidian-base font-label-uppercase text-label-uppercase uppercase px-space-lg py-space-sm transition-all tracking-wider font-semibold" href="#contact">Start Campaign</a><div class="hidden lg:flex flex-col text-right font-label-uppercase text-[10px] text-stone-muted"><span class="text-parchment-text">TORONTO · ABERDEEN</span><span class="text-secondary">smprgroup.ig@gmail.com</span></div></div></div></header><main class="w-full pt-20 bg-obsidian-base"><div class="flex flex-col w-full">
+<!-- TOP DISPATCH / VIRAL WIRE STATUS BAR -->
+<div class="w-full bg-surface-container-lowest py-space-xs px-margin-mobile md:px-margin-tablet lg:px-margin-desktop border-b border-white/5">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between font-label-uppercase text-label-uppercase tracking-widest text-stone-muted">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+          ACTIVE CAMPAIGN DISPATCH
+        </span>
+<span class="hidden sm:inline text-surface-variant">/</span>
+<span class="hidden sm:inline">TORONTO · ABERDEEN // VIRAL REEL VELOCITY</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="hidden md:inline">TV • ANIMATION • MUSIC • COMEDY • INFLUENCERS • BRANDS</span>
+<span class="text-secondary tracking-normal font-mono text-[11px]">85,000,000+ TOTAL VIEWS</span>
+</div>
+</div>
+</div>
+<!-- HERO SECTION: SHORT-FORM MEDIA STUDIO & EDITORIAL REACH -->
+<section class="relative w-full bg-obsidian-base pt-space-2xl pb-space-4xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop overflow-hidden">
+<!-- Atmospheric subtle gradient -->
+<div class="absolute -top-40 right-1/4 w-[580px] h-[580px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left Column: Master Narrative -->
+<div class="lg:col-span-8 flex flex-col">
+<div class="inline-flex items-center gap-space-xs mb-space-md self-start bg-charcoal-surface px-3 py-1 border border-white/5">
+<span class="w-2 h-2 bg-primary"></span>
+<span class="font-label-uppercase text-label-uppercase text-primary uppercase">CLIPPING &amp; CONTENT PROMOTION CAMPAIGNS · 85,000,000+ TOTAL VIEWS</span>
+</div>
+<h1 class="font-headline-display text-headline-display text-parchment-text mb-space-lg max-w-4xl tracking-tight">
+          Driving Visibility, Engagement &amp; Viral Reach Across Entertainment.
+        </h1>
+<p class="font-subheading-lg text-subheading-lg text-stone-muted max-w-2xl mb-space-2xl leading-relaxed">
+          SM PR Group &amp; S&amp;C Media is a high-performance media studio specializing in clipping, short-form editing, and content promotion. We drive explosive visibility across TV, Animation, Music, Comedy, Influencers, and Brands.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-space-md">
+<a class="bg-primary-container text-obsidian-base font-label-uppercase text-label-uppercase uppercase px-space-xl py-4 transition-transform hover:-translate-y-0.5 font-semibold tracking-wider" href="#case-studies">
+            Explore Past Campaigns
+          </a>
+<button class="bg-transparent text-parchment-text hover:text-primary font-label-uppercase text-label-uppercase uppercase px-space-lg py-4 transition-colors flex items-center gap-2 group border border-white/10 hover:border-primary/40" onclick="document.getElementById('brief-modal').classList.remove('hidden')">
+<span>Download Pitch Deck (PDF)</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Real-time Quantitative Dossier Module -->
+<div class="lg:col-span-4 mt-space-xl lg:mt-0">
+<div class="bg-charcoal-surface p-space-lg flex flex-col gap-space-lg relative border border-white/5 shadow-2xl">
+<div class="flex items-baseline justify-between pb-space-sm bg-surface-container-low px-space-sm py-space-xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Verified Performance</span>
+<span class="font-label-uppercase text-label-uppercase text-stone-muted">PORTFOLIO AUDIT</span>
+</div>
+<div class="grid grid-cols-1 gap-space-md">
+<div class="bg-surface-container-low p-space-md">
+<div class="font-headline-display text-[52px] leading-none text-primary mb-1">85M+</div>
+<div class="font-label-uppercase text-label-uppercase text-parchment-text">Total Campaign Views Delivered</div>
+<div class="font-body-sm text-body-sm text-stone-muted mt-1">Short-form distribution &amp; clipping syndication</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-space-md">
+<div class="font-headline-md text-headline-md text-secondary leading-none mb-1">5.8M+</div>
+<div class="font-label-uppercase text-label-uppercase text-stone-muted text-[10px]">S&amp;C Clipping Views</div>
+</div>
+<div class="bg-surface-container-low p-space-md">
+<div class="font-headline-md text-headline-md text-secondary leading-none mb-1">10M+</div>
+<div class="font-label-uppercase text-label-uppercase text-stone-muted text-[10px]">Organic TV Reach</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md flex items-center justify-between">
+<div>
+<span class="font-label-uppercase text-label-uppercase text-primary block">Category Authority</span>
+<span class="font-body-sm text-body-sm text-parchment-text">TV, Animation, Music &amp; Comedy</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">verified</span>
+</div>
+</div>
+<!-- Micro Sparkline SVG -->
+<div class="pt-space-xs">
+<div class="flex items-center justify-between text-[11px] font-label-uppercase text-stone-muted mb-2">
+<span>VIRAL CLIP VELOCITY RETENTION</span>
+<span class="text-primary">+88.7% HOOK RATE</span>
+</div>
+<svg class="w-full h-8 text-primary overflow-visible" fill="none" viewbox="0 0 280 32">
+<path d="M0 28 L35 22 L70 24 L105 14 L140 16 L175 9 L210 11 L245 4 L280 2" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
+<path d="M0 28 L35 22 L70 24 L105 14 L140 16 L175 9 L210 11 L245 4 L280 2 V 32 H 0 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle class="fill-primary" cx="280" cy="2" r="3"></circle>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAMPAIGN TICKER / CONTINUOUS MARQUEE -->
+<section class="w-full bg-surface-container-lowest py-space-xl overflow-hidden select-none border-y border-white/5">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop mb-space-sm flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-stone-muted uppercase tracking-widest">Featured Client Campaigns &amp; High-Profile Cutdowns</span>
+<span class="font-label-uppercase text-label-uppercase text-primary tracking-widest hidden sm:inline">VIRAL RETENTION PORTFOLIO</span>
+</div>
+<!-- Ticker Strip -->
+<div class="relative w-full flex overflow-x-hidden py-space-sm bg-charcoal-surface">
+<div class="flex items-center gap-space-3xl animate-[marquee_30s_linear_infinite] whitespace-nowrap px-space-md">
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">THE VOICE</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">DOC (HULU)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">MRBEAST CAMPAIGNS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">GOPUFF × DRUSKI × TOM BRADY</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">TEDDY SWIMS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">MYLES SMITH</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">ZOOTOPIA</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">CITADEL</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">HIGGSFIELD AI</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">DEAD MAN'S WIRE</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+</div>
+<div aria-hidden="true" class="flex items-center gap-space-3xl animate-[marquee_30s_linear_infinite] whitespace-nowrap px-space-md">
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">THE VOICE</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">DOC (HULU)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">MRBEAST CAMPAIGNS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">GOPUFF × DRUSKI × TOM BRADY</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">TEDDY SWIMS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">MYLES SMITH</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">ZOOTOPIA</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">CITADEL</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">HIGGSFIELD AI</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+<span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">DEAD MAN'S WIRE</span>
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+</div>
+</div>
+</section>
+<!-- FEATURED MASTER CASE STUDIES: BROADSHEET EDITORIAL GRIDS -->
+<section class="w-full bg-obsidian-base py-space-4xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop" id="case-studies">
+<div class="max-w-[1440px] mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl gap-space-lg">
+<div>
+<div class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-widest">Selected Past Works // High Performance Media</div>
+<h2 class="font-headline-lg text-headline-lg text-parchment-text">Master Case Studies</h2>
+</div>
+<div class="max-w-md">
+<p class="font-body-md text-body-md text-stone-muted">
+            Deconstructing multi-million view short-form editing sequences, emotional contestant arcs, and viral retention engineering across Instagram Reels &amp; TikTok.
+          </p>
+</div>
+</div>
+<!-- Case Study 01: THE VOICE -->
+<div class="bg-charcoal-surface mb-space-3xl group overflow-hidden border border-white/5">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+<!-- Image Framed Narrative (Col 7) -->
+<div class="lg:col-span-7 relative min-h-[440px] lg:min-h-[580px] overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out" data-alt="Cinematic film production set with anamorphic camera rig, neon studio backlight, director monitor showing live actor framing, high-end commercial filmmaking vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApwbX_-vWaztbMnq2KMBa8J4kp2QtYExbw24gXfvshhSCm64JFCU2UH0563b_YiJChLNKFoiuSyhxp568aIxGear1HoTRaYagKp7TQaaZBL34NT25n3OTTNdb4f4IEyBEUo6QYCRMJL3g34MNMGZRJSdcaW-wrGHMGFO1wxOTpERylY969jlXJhenc3kwxivOrzaGfV9yyxG_Oswq1uKH8Fyil4SuvH7T1kr8kzIESCcvU29CSmbn0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian-base via-transparent to-transparent opacity-80"></div>
+<!-- Sticky Image Tagging -->
+<div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-parchment-text">
+<div class="bg-obsidian-base/80 backdrop-blur-md px-3 py-1 font-label-uppercase text-label-uppercase text-secondary border border-white/10">
+                CAMPAIGN // 01 • THE VOICE HIGHLIGHT INITIATIVE
+              </div>
+<div class="flex gap-2 font-label-uppercase text-label-uppercase text-stone-muted">
+<span class="bg-obsidian-base/80 backdrop-blur-md px-2 py-1">BROADCAST TV</span>
+<span class="bg-obsidian-base/80 backdrop-blur-md px-2 py-1">REELS &amp; TIKTOK</span>
+</div>
+</div>
+</div>
+<!-- Editorial Copy & Placements (Col 5) -->
+<div class="lg:col-span-5 p-space-xl flex flex-col justify-between bg-surface-container-low">
+<div>
+<div class="flex items-center gap-space-xs mb-space-sm font-label-uppercase text-label-uppercase text-primary">
+<span>TV &amp; ENTERTAINMENT</span>
+<span>/</span>
+<span>8,000,000+ TOTAL VIEWS</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-parchment-text mb-space-md">
+                The Voice — Performance Highlight Initiative
+              </h3>
+<div class="bg-surface-container p-space-md mb-space-md">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase tracking-wider mb-1">Campaign Execution</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Supported multiple seasonal episodes by clipping key performance moments, emotional contestant stories, and high-energy judge reactions. Optimized for virality and repostability across Instagram and TikTok with precision sound-bite mastering.
+                </p>
+</div>
+<!-- Media Badges -->
+<div class="mb-space-lg">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase tracking-wider mb-2">Audited Delivery Highlights</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">1,541,984 Single Reel Views</span>
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">829,315 Accounts Reached</span>
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">17s Average Watch Time</span>
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">12.3% Ultra-Low Skip Rate</span>
+</div>
+</div>
+</div>
+<!-- Quantitative Footnote -->
+<div class="pt-space-md bg-surface-container-lowest p-space-md flex items-center justify-between border-t border-white/5">
+<div>
+<div class="font-headline-sm text-headline-sm text-primary leading-none">8.0M+</div>
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase mt-1">Total Campaign Views</div>
+</div>
+<div class="h-8 w-px bg-surface-variant"></div>
+<div>
+<div class="font-headline-sm text-headline-sm text-secondary leading-none">829K+</div>
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase mt-1">Accounts Reached</div>
+</div>
+<div class="h-8 w-px bg-surface-variant"></div>
+<div>
+<div class="font-headline-sm text-headline-sm text-parchment-text leading-none">+539</div>
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase mt-1">Direct Net Follows</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Case Study 02: GOPUFF X DRUSKI X TOM BRADY -->
+<div class="bg-charcoal-surface mb-space-3xl group overflow-hidden border border-white/5">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+<!-- Editorial Copy & Placements (Col 5) -->
+<div class="lg:col-span-5 p-space-xl flex flex-col justify-between bg-surface-container-low order-2 lg:order-1">
+<div>
+<div class="flex items-center gap-space-xs mb-space-sm font-label-uppercase text-label-uppercase text-primary">
+<span>BRAND &amp; COMMERCIAL</span>
+<span>/</span>
+<span>6,000,000+ TOTAL VIEWS</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-parchment-text mb-space-md">
+                GoPuff × Druski × Tom Brady — Viral Comedy Series
+              </h3>
+<div class="bg-surface-container p-space-md mb-space-md">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase tracking-wider mb-1">Creative Strategy</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Produced viral promotional edits combining marquee celebrity appearances, spontaneous comedy, and branded storytelling. Emphasized comedic pacing, cultural meme formats, and rapid trend adaptation across short-form feeds.
+                </p>
+</div>
+<!-- Media Badges -->
+<div class="mb-space-lg">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase tracking-wider mb-2">Campaign Impact</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">6,000,000+ Combined Views</span>
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">High Viral Retention Hooks</span>
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">Cross-Platform Repost Velocity</span>
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">Meme Syndication Units</span>
+</div>
+</div>
+</div>
+<!-- Quantitative Footnote -->
+<div class="pt-space-md bg-surface-container-lowest p-space-md flex items-center justify-between border-t border-white/5">
+<div>
+<div class="font-headline-sm text-headline-sm text-primary leading-none">6.0M+</div>
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase mt-1">Total Views</div>
+</div>
+<div class="h-8 w-px bg-surface-variant"></div>
+<div>
+<div class="font-headline-sm text-headline-sm text-secondary leading-none">Top 1%</div>
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase mt-1">Retention Index</div>
+</div>
+<div class="h-8 w-px bg-surface-variant"></div>
+<div>
+<div class="font-headline-sm text-headline-sm text-parchment-text leading-none">Organic</div>
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase mt-1">Viral Reposting</div>
+</div>
+</div>
+</div>
+<!-- Image Framed Narrative (Col 7) -->
+<div class="lg:col-span-7 relative min-h-[440px] lg:min-h-[580px] overflow-hidden order-1 lg:order-2">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out" data-alt="Viral social media clipping creator studio, multi-screen setup showing high-engagement vertical short-form reels, smartphone analytics dashboards with viral curves, neon bronze ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyJkxWPfb5fxericYNkQmnYzFcOOiKBSd4gJZ0ZiH4lUgTjTmArob3Nwisn5KjAfGOkezRrsfiISrXh-_vFvs-lCzspF03a8sKlJ2L14G2bvdBr16dbJ5_Dv-HIp_9MH0edgpvGBDKRv6NDUFYQF4rQl8yJvT_mKigwn4cPiSCyPql1nvaweML5uEbFwwF7jfjPOXkyCysdKDzv7RgFJ7c1z1T79DsKFCSCzlLdaRk465Q5qGUN-SW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian-base via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-parchment-text">
+<div class="bg-obsidian-base/80 backdrop-blur-md px-3 py-1 font-label-uppercase text-label-uppercase text-secondary border border-white/10">
+                CAMPAIGN // 02 • GOPUFF × DRUSKI × TOM BRADY
+              </div>
+<div class="flex gap-2 font-label-uppercase text-label-uppercase text-stone-muted">
+<span class="bg-obsidian-base/80 backdrop-blur-md px-2 py-1">COMEDY</span>
+<span class="bg-obsidian-base/80 backdrop-blur-md px-2 py-1">BRAND CAMPAIGN</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Case Study 03: DOC (HULU) & CITADEL -->
+<div class="bg-charcoal-surface group overflow-hidden border border-white/5">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+<div class="lg:col-span-7 relative min-h-[440px] lg:min-h-[580px] overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out" data-alt="Dark moody aesthetic professional video editing suite timeline interface with premiere or da vinci resolve waveforms, glowing 4k monitors, color grading cinematic footage, dark studio atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn4Jpi1vV-CwEedJ7gIZ6W-zwtmFNCopbYT6B7m4J6DemLNhDhLFEC96IuljjHf6J_OgW6XwxcpUjXE-BPIQCOlYkQ2pcmVJVt5ZAvMmvIoc51WFNz3QUJxo29KKSUDqiF0okdh17dBgCvMLwyybCc_P-SbEYNRizTFnU3NUrHZdWNOS3gKS5zAG_A3Nfifq6zGYCPDdx7_RDlrQR0YM2dvjW0NJOS5qudUEhgoBPligE7zUeYpoYn"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian-base via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-parchment-text">
+<div class="bg-obsidian-base/80 backdrop-blur-md px-3 py-1 font-label-uppercase text-label-uppercase text-secondary border border-white/10">
+                CAMPAIGN // 03 • STREAMING DRAMA &amp; SUSPENSE
+              </div>
+<div class="flex gap-2 font-label-uppercase text-label-uppercase text-stone-muted">
+<span class="bg-obsidian-base/80 backdrop-blur-md px-2 py-1">HULU</span>
+<span class="bg-obsidian-base/80 backdrop-blur-md px-2 py-1">PRIME VIDEO</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 p-space-xl flex flex-col justify-between bg-surface-container-low">
+<div>
+<div class="flex items-center gap-space-xs mb-space-sm font-label-uppercase text-label-uppercase text-primary">
+<span>DRAMA &amp; STREAMING</span>
+<span>/</span>
+<span>9,000,000+ VIEWS COMBINED</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-parchment-text mb-space-md">
+                Doc (Hulu) &amp; Citadel — Suspense &amp; Drama Campaigns
+              </h3>
+<div class="bg-surface-container p-space-md mb-space-md">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase tracking-wider mb-1">The Narrative Shift</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Created compelling short-form edits centered around emotional patient stories, dramatic medical cases, and high-intensity action sequences tailored to grip attention in the first 1.5 seconds.
+                </p>
+</div>
+<div class="mb-space-lg">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase tracking-wider mb-2">Audited Doc (Hulu) Metrics</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">6,151,072 Single Reel Views</span>
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">4,030,345 Accounts Reached</span>
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">1m 11s Avg Watch Time</span>
+<span class="bg-surface-container-high text-parchment-text font-quote-pull italic text-sm px-3 py-1">11.3% Skip Rate</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md bg-surface-container-lowest p-space-md flex items-center justify-between border-t border-white/5">
+<div>
+<div class="font-headline-sm text-headline-sm text-primary leading-none">6.15M</div>
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase mt-1">Doc Reel Views</div>
+</div>
+<div class="h-8 w-px bg-surface-variant"></div>
+<div>
+<div class="font-headline-sm text-headline-sm text-secondary leading-none">4.03M</div>
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase mt-1">Accounts Reached</div>
+</div>
+<div class="h-8 w-px bg-surface-variant"></div>
+<div>
+<div class="font-headline-sm text-headline-sm text-parchment-text leading-none">+2,829</div>
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase mt-1">New Net Follows</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- REEL INSIGHTS & AUDITED PERFORMANCE PROOF SECTION -->
+<section class="w-full bg-surface-container-lowest py-space-4xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop border-y border-white/5" id="reel-insights">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl gap-space-lg">
+<div>
+<div class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-widest">Audited Analytics &amp; Reel Insights</div>
+<h2 class="font-headline-lg text-headline-lg text-parchment-text">Verified Performance Metrics</h2>
+</div>
+<div class="max-w-md">
+<p class="font-body-md text-body-md text-stone-muted">
+            Directly from our campaign dashboards. Verified watch time, retention depth, and account conversion across major entertainment franchises.
+          </p>
+</div>
+</div>
+<!-- Ledger / Table Layout -->
+<div class="bg-charcoal-surface overflow-hidden border border-white/5">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-white/10 bg-surface-container-low font-label-uppercase text-label-uppercase text-stone-muted">
+<th class="p-space-md">Campaign / Title</th>
+<th class="p-space-md">Genre / Category</th>
+<th class="p-space-md text-right">Reel Views</th>
+<th class="p-space-md text-right">Accounts Reached</th>
+<th class="p-space-md text-right">Avg Watch Time</th>
+<th class="p-space-md text-right">Follows</th>
+<th class="p-space-md text-right">Skip Rate</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5 font-body-sm">
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-medium text-parchment-text flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Doc (Hulu)
+                    </td>
+<td class="p-space-md text-stone-muted font-label-uppercase text-[11px]">Drama / Series</td>
+<td class="p-space-md text-right font-mono text-primary font-semibold">6,151,072</td>
+<td class="p-space-md text-right font-mono text-secondary">4,030,345</td>
+<td class="p-space-md text-right font-mono text-parchment-text">1m 11s</td>
+<td class="p-space-md text-right font-mono text-primary">+2,829</td>
+<td class="p-space-md text-right font-mono text-secondary">11.3%</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-medium text-parchment-text flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      The Voice
+                    </td>
+<td class="p-space-md text-stone-muted font-label-uppercase text-[11px]">Reality TV / Singing</td>
+<td class="p-space-md text-right font-mono text-primary font-semibold">1,541,984</td>
+<td class="p-space-md text-right font-mono text-secondary">829,315</td>
+<td class="p-space-md text-right font-mono text-parchment-text">17s</td>
+<td class="p-space-md text-right font-mono text-primary">+539</td>
+<td class="p-space-md text-right font-mono text-secondary">12.3%</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-medium text-parchment-text flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                      Dawson's Creek
+                    </td>
+<td class="p-space-md text-stone-muted font-label-uppercase text-[11px]">Teen Drama / Classic</td>
+<td class="p-space-md text-right font-mono text-primary font-semibold">1,337,306</td>
+<td class="p-space-md text-right font-mono text-secondary">936,167</td>
+<td class="p-space-md text-right font-mono text-parchment-text">37s</td>
+<td class="p-space-md text-right font-mono text-primary">+260</td>
+<td class="p-space-md text-right font-mono text-secondary">14.4%</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-medium text-parchment-text flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                      Merrily We Go Along
+                    </td>
+<td class="p-space-md text-stone-muted font-label-uppercase text-[11px]">Musical / Stage</td>
+<td class="p-space-md text-right font-mono text-primary font-semibold">1,243,335</td>
+<td class="p-space-md text-right font-mono text-secondary">825,899</td>
+<td class="p-space-md text-right font-mono text-parchment-text">21s</td>
+<td class="p-space-md text-right font-mono text-primary">+565</td>
+<td class="p-space-md text-right font-mono text-secondary">24.2%</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-medium text-parchment-text flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+                      MrBeast Campaigns
+                    </td>
+<td class="p-space-md text-stone-muted font-label-uppercase text-[11px]">Creator / Entertainment</td>
+<td class="p-space-md text-right font-mono text-primary font-semibold">7,000,000+</td>
+<td class="p-space-md text-right font-mono text-secondary">4,800,000+</td>
+<td class="p-space-md text-right font-mono text-parchment-text">Viral Cutdowns</td>
+<td class="p-space-md text-right font-mono text-primary">+3,100</td>
+<td class="p-space-md text-right font-mono text-secondary">Sub 10%</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-medium text-parchment-text flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>
+                      Teddy Swims &amp; Myles Smith
+                    </td>
+<td class="p-space-md text-stone-muted font-label-uppercase text-[11px]">Music Promotion</td>
+<td class="p-space-md text-right font-mono text-primary font-semibold">8,500,000+</td>
+<td class="p-space-md text-right font-mono text-secondary">5,200,000+</td>
+<td class="p-space-md text-right font-mono text-parchment-text">Tour Audio Sync</td>
+<td class="p-space-md text-right font-mono text-primary">+4,250</td>
+<td class="p-space-md text-right font-mono text-secondary">Top Tier</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Additional Animation & AI Highlights Row -->
+<div class="mt-space-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-charcoal-surface p-space-md border border-white/5">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase">Animation Highlight</div>
+<div class="font-headline-sm text-headline-sm text-parchment-text mt-1">Zootopia</div>
+<div class="font-mono text-primary text-lg font-semibold mt-1">1,300,000+ Views</div>
+<p class="font-body-sm text-stone-muted text-[12px] mt-1">Short-form animation cutdowns and fan-favorite character loops.</p>
+</div>
+<div class="bg-charcoal-surface p-space-md border border-white/5">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase">AI &amp; Tech Innovation</div>
+<div class="font-headline-sm text-headline-sm text-parchment-text mt-1">Higgsfield AI</div>
+<div class="font-mono text-primary text-lg font-semibold mt-1">4,500,000+ Views</div>
+<p class="font-body-sm text-stone-muted text-[12px] mt-1">Demonstration videos showcasing generation capabilities.</p>
+</div>
+<div class="bg-charcoal-surface p-space-md border border-white/5">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase">Comedy Animation</div>
+<div class="font-headline-sm text-headline-sm text-parchment-text mt-1">Universal Basic Guys</div>
+<div class="font-mono text-secondary text-lg font-semibold mt-1">300,000+ Views</div>
+<p class="font-body-sm text-stone-muted text-[12px] mt-1">Punchy dialog clipping driving awareness for series debut.</p>
+</div>
+<div class="bg-charcoal-surface p-space-md border border-white/5">
+<div class="font-label-uppercase text-[10px] text-stone-muted uppercase">Fintech &amp; Culture</div>
+<div class="font-headline-sm text-headline-sm text-parchment-text mt-1">Kalshi</div>
+<div class="font-mono text-secondary text-lg font-semibold mt-1">300,000+ Views</div>
+<p class="font-body-sm text-stone-muted text-[12px] mt-1">Market insights translated into high-impact social clips.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CORE SERVICES SECTION: 10 PILLARS -->
+<section class="w-full bg-obsidian-base py-space-4xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop" id="core-services">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl gap-space-lg">
+<div>
+<div class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-widest">End-to-End Media Studio // Full Agency Suite</div>
+<h2 class="font-headline-lg text-headline-lg text-parchment-text">Core Services</h2>
+</div>
+<div class="max-w-md">
+<p class="font-body-md text-body-md text-stone-muted">
+            Specialized short-form video production, editing, growth architecture, and digital campaign execution tailored for peak engagement.
+          </p>
+</div>
+</div>
+<!-- 10 Services Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- Service 01 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 01</span>
+<span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">campaign</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">Instagram Advertisements</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+              Targeted Story ads, Posts, and high-retention Reels tailored to convert impressions into followers, stream counts, and ticket sales.
+            </p>
+</div>
+<div class="pt-space-md border-t border-white/5 mt-space-md">
+<span class="font-label-uppercase text-[11px] text-secondary">Story Ads • Boosted Reels • Direct Response</span>
+</div>
+</div>
+<!-- Service 02 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 02</span>
+<span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">trending_up</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">Account Growth &amp; Audience Reach</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+              Algorithmic amplification designed to push content outside existing follower bubbles and tap into hyper-engaged niche communities.
+            </p>
+</div>
+<div class="pt-space-md border-t border-white/5 mt-space-md">
+<span class="font-label-uppercase text-[11px] text-secondary">Organic Expansion • Discovery Optimization</span>
+</div>
+</div>
+<!-- Service 03 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 03</span>
+<span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">edit_note</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">Caption Writing + Hashtag Strategy</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+              Compelling micro-copy engineered for dwell time, high comment velocity, and metadata indexing across search algorithms.
+            </p>
+</div>
+<div class="pt-space-md border-t border-white/5 mt-space-md">
+<span class="font-label-uppercase text-[11px] text-secondary">SEO Tagging • Viral Hook Prompts</span>
+</div>
+</div>
+<!-- Service 04 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 04</span>
+<span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">schedule</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">Content Scheduling &amp; Distribution</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+              Synchronized global posting cadences configured around peak audience activity in North American, European, and UK media markets.
+            </p>
+</div>
+<div class="pt-space-md border-t border-white/5 mt-space-md">
+<span class="font-label-uppercase text-[11px] text-secondary">Peak-Window Deployment • Cross-Platform</span>
+</div>
+</div>
+<!-- Service 05 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 05</span>
+<span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">hub</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">Applications of Meta's CRM</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+              Deep integration with Meta Business Suite, automated direct-message funnels, custom lead nurturing, and fan community segments.
+            </p>
+</div>
+<div class="pt-space-md border-t border-white/5 mt-space-md">
+<span class="font-label-uppercase text-[11px] text-secondary">Meta Suite • DM Automation • Fan Retention</span>
+</div>
+</div>
+<!-- Service 06 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 06</span>
+<span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">movie_filter</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">Video Editing &amp; Audio Cleaning</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+              Industry-standard cutting in Adobe Premiere Pro and DaVinci Resolve. Surgical sound cleanup, spatial panning, dynamic kinetic subtitles, and color grading.
+            </p>
+</div>
+<div class="pt-space-md border-t border-white/5 mt-space-md">
+<span class="font-label-uppercase text-[11px] text-secondary">Premiere • DaVinci • Izotope RX Audio</span>
+</div>
+</div>
+<!-- Service 07 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 07</span>
+<span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">palette</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">Graphics Design</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+              High-converting visual assets crafted in Canva, Figma, and Adobe Illustrator. Custom YouTube/Reel covers, carousel layouts, and title cards.
+            </p>
+</div>
+<div class="pt-space-md border-t border-white/5 mt-space-md">
+<span class="font-label-uppercase text-[11px] text-secondary">Figma • Illustrator • Custom Typography</span>
+</div>
+</div>
+<!-- Service 08 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 08</span>
+<span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">language</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">Website Design &amp; Development</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+              Bespoke digital portfolios, streaming landing portals, and conversion-optimized websites built for artists, creators, and media enterprises.
+            </p>
+</div>
+<div class="pt-space-md border-t border-white/5 mt-space-md">
+<span class="font-label-uppercase text-[11px] text-secondary">High-End Portfolios • Responsive UX/UI</span>
+</div>
+</div>
+<!-- Service 09 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 09</span>
+<span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">grid_view</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">Aesthetic Feed Layouts &amp; Story Curation</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+              Harmonized 9-grid visual architecture and daily narrative stories that convey brand prestige, maintain curiosity, and drive profile visits.
+            </p>
+</div>
+<div class="pt-space-md border-t border-white/5 mt-space-md">
+<span class="font-label-uppercase text-[11px] text-secondary">Feed Visual Identity • Highlights Architecture</span>
+</div>
+</div>
+<!-- Service 10 -->
+<div class="bg-charcoal-surface p-space-xl flex flex-col justify-between hover:bg-surface-container-low transition-colors group border border-white/5 md:col-span-2 lg:col-span-3">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-8">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 10</span>
+<span class="material-symbols-outlined text-primary">insights</span>
+</div>
+<h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-xs">Content Calendar &amp; Trend Strategy</h3>
+<p class="font-body-md text-body-md text-stone-muted">
+                Pre-emptive trend forecasting, audio trend scouting 72 hours before mainstream adoption, and multi-week strategic publishing roadmaps.
+              </p>
+</div>
+<div class="md:col-span-4 flex md:justify-end">
+<a class="bg-surface-container-high hover:bg-primary-container hover:text-obsidian-base text-parchment-text font-label-uppercase text-label-uppercase uppercase px-space-lg py-3 transition-colors text-center w-full md:w-auto" href="#contact">
+                Deploy Strategy Protocol →
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROMINENT AGENCY INQUIRY & BRIEF INTAKE BANNER -->
+<section class="w-full bg-surface-container-lowest py-space-4xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop relative overflow-hidden border-t border-white/5" id="contact">
+<div class="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-primary/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto bg-charcoal-surface p-space-2xl md:p-space-3xl relative border border-white/5">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left Side: Engagement Protocol Headline -->
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 text-primary font-label-uppercase text-label-uppercase tracking-widest uppercase mb-space-sm">
+<span class="w-2 h-2 bg-primary"></span>
+<span>Start a Clipping &amp; Promotion Campaign</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-parchment-text mb-space-md">
+            Ready to Drive Viral Visibility Across Your Content?
+          </h2>
+<p class="font-body-lg text-body-lg text-stone-muted max-w-xl mb-space-xl">
+            Whether you are launching a network TV series, streaming title, music project, or brand initiative, our clipping units deliver measurable retention and massive reach.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs font-label-uppercase text-[11px] text-stone-muted">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">location_on</span>
+<span>Toronto · Aberdeen</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">bolt</span>
+<span>Fast Turnaround Cuts</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+<span>85M+ Audited Proof</span>
+</div>
+</div>
+<div class="mt-space-lg flex items-center gap-2 text-stone-muted font-body-sm">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>Direct Studio Desk: <a class="text-primary hover:underline" href="mailto:smprgroup.ig@gmail.com">smprgroup.ig@gmail.com</a></span>
+</div>
+</div>
+<!-- Right Side: Action Box -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-xl flex flex-col gap-space-md border border-white/5">
+<div class="font-label-uppercase text-label-uppercase text-stone-muted uppercase tracking-wider">
+            Initiate Project Brief
+          </div>
+<form class="flex flex-col gap-space-sm" onsubmit="event.preventDefault(); alert('Campaign brief received. A Senior Producer will review your footage specs within 24 hours.');">
+<div>
+<label class="block font-label-uppercase text-[10px] text-stone-muted uppercase mb-1">Brand / Artist / Creator Name</label>
+<input class="w-full bg-charcoal-surface text-parchment-text px-4 py-3 font-body-sm focus:outline-none focus:bg-surface-container transition-colors border border-white/5" placeholder="e.g. Paramount / Universal / Independent Artist" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-uppercase text-[10px] text-stone-muted uppercase mb-1">Contact Email</label>
+<input class="w-full bg-charcoal-surface text-parchment-text px-4 py-3 font-body-sm focus:outline-none focus:bg-surface-container transition-colors border border-white/5" placeholder="producer@studio.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-uppercase text-[10px] text-stone-muted uppercase mb-1">Primary Campaign Objective</label>
+<select class="w-full bg-charcoal-surface text-parchment-text px-4 py-3 font-body-sm focus:outline-none focus:bg-surface-container transition-colors border border-white/5">
+<option>Video Editing &amp; Clipping Unit</option>
+<option>Instagram Ads &amp; Audience Growth</option>
+<option>Full Social Media Management</option>
+<option>Multi-Platform Promotion (Music / TV / Brand)</option>
+</select>
+</div>
+<button class="mt-space-xs w-full bg-primary-container hover:bg-primary text-obsidian-base font-label-uppercase text-label-uppercase uppercase py-4 transition-all tracking-wider font-semibold" type="submit">
+              Submit Campaign Request →
+            </button>
+</form>
+<div class="text-center font-label-uppercase text-[10px] text-stone-muted">
+            Direct Inquiries: <a class="text-primary hover:underline" href="mailto:smprgroup.ig@gmail.com">smprgroup.ig@gmail.com</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PITCH DECK DOWNLOAD MODAL -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-obsidian-base/80 backdrop-blur-xl p-4" id="brief-modal">
+<div class="bg-charcoal-surface max-w-xl w-full p-space-xl relative shadow-2xl border border-white/10">
+<button class="absolute top-4 right-4 text-stone-muted hover:text-parchment-text" onclick="document.getElementById('brief-modal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="font-label-uppercase text-label-uppercase text-primary uppercase tracking-widest mb-2">Agency Pitch Deck &amp; Rate Card</div>
+<h3 class="font-headline-md text-headline-md text-parchment-text mb-space-sm">SM PR Group &amp; S&amp;C Media Deck</h3>
+<p class="font-body-sm text-body-sm text-stone-muted mb-space-lg">
+        Explore full case breakdowns for The Voice, Doc (Hulu), GoPuff, MrBeast, Teddy Swims, and our full clipping deliverables package.
+      </p>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); alert('Deck link transmitted to your email.'); document.getElementById('brief-modal').classList.add('hidden');">
+<div>
+<label class="block font-label-uppercase text-[10px] text-stone-muted uppercase mb-1">Company or Production Email</label>
+<input class="w-full bg-surface-container-low text-parchment-text px-4 py-3 font-body-sm focus:outline-none border border-white/5" placeholder="executive@entertainment.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-uppercase text-[10px] text-stone-muted uppercase mb-1">Industry / Entity</label>
+<input class="w-full bg-surface-container-low text-parchment-text px-4 py-3 font-body-sm focus:outline-none border border-white/5" placeholder="TV Network / Record Label / Brand" required="" type="text"/>
+</div>
+<button class="w-full bg-primary-container text-obsidian-base font-label-uppercase text-label-uppercase uppercase py-3 font-semibold tracking-wider hover:bg-primary transition-colors" type="submit">
+          Download PDF Pitch Deck
+        </button>
+</form>
+</div>
+</div>
+</div></main><footer class="w-full bg-charcoal-surface py-space-3xl border-t border-white/5"><div class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop max-w-[1440px] mx-auto"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop mb-space-2xl"><div class="md:col-span-4 flex flex-col gap-space-sm"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-parchment-text">SM PR GROUP</span><span class="font-label-uppercase text-label-uppercase text-stone-muted uppercase">/ S&amp;C MEDIA</span></div><p class="font-body-sm text-body-sm text-stone-muted max-w-sm">A high-performance media studio specializing in clipping, short-form editing, and content promotion across TV, Animation, Music, Comedy, Influencers, and Brands.</p></div><div class="md:col-span-2 flex flex-col gap-space-xs"><span class="font-label-uppercase text-label-uppercase text-stone-muted uppercase tracking-wider mb-space-xs">Navigation</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Overview</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#case-studies">Case Studies</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#core-services">Core Services</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#reel-insights">Reel Insights</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#contact">Contact</a></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-uppercase text-label-uppercase text-stone-muted uppercase tracking-wider mb-space-xs">Locations</span><div class="flex flex-col gap-space-2xs font-body-sm text-body-sm text-on-surface-variant"><div><span class="text-parchment-text font-medium">Toronto</span> — Canada</div><div><span class="text-parchment-text font-medium">Aberdeen</span> — Scotland, UK</div><div class="text-stone-muted mt-1">Global remote production &amp; clipping units</div></div></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-uppercase text-label-uppercase text-stone-muted uppercase tracking-wider mb-space-xs">Campaign Inquiries</span><a class="font-body-sm text-body-sm text-primary hover:text-amber-highlight transition-colors" href="mailto:smprgroup.ig@gmail.com">smprgroup.ig@gmail.com</a><span class="font-body-sm text-body-sm text-stone-muted">Verified Campaign Reach: 85,000,000+</span><div class="mt-space-sm"><a class="inline-block font-label-uppercase text-label-uppercase text-primary hover:text-amber-highlight transition-colors uppercase" href="#contact">Start a Campaign →</a></div></div></div><div class="flex flex-col sm:flex-row items-center justify-between pt-space-lg gap-space-md font-label-uppercase text-label-uppercase text-stone-muted uppercase border-t border-white/5"><p>© 2025 SM PR Group &amp; S&amp;C Media. All Rights Reserved.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" href="#">Clipping Rights</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a></div></div></div></footer></body></html>
