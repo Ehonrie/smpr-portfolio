@@ -2,7 +2,7 @@ function renderStrip(items) {
   return items
     .map(
       (label) => `
-        <span class="font-headline-sm text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">${label}</span>
+        <span class="font-headline-sm text-[18px] leading-6 md:text-headline-sm text-parchment-text tracking-wider opacity-80 hover:opacity-100 transition-opacity">${label}</span>
         <span class="w-1.5 h-1.5 rounded-full bg-editorial-bronze"></span>`
     )
     .join("");

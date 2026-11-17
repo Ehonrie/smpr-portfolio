@@ -31,7 +31,7 @@ export function renderReelInsights(metricsRows, highlightCards) {
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl gap-space-lg">
           <div>
             <div class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-widest">Audited Analytics &amp; Reel Insights</div>
-            <h2 class="font-headline-lg text-headline-lg text-parchment-text">Verified Performance Metrics</h2>
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-parchment-text">Verified Performance Metrics</h2>
           </div>
           <div class="max-w-md">
             <p class="font-body-md text-body-md text-stone-muted">

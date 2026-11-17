@@ -6,7 +6,7 @@ function renderService(service) {
           <span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // ${service.number}</span>
           <span class="material-symbols-outlined text-stone-muted group-hover:text-primary transition-colors">${service.icon}</span>
         </div>
-        <h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-sm">${service.title}</h3>
+        <h3 class="font-headline-md text-[22px] md:text-[26px] leading-tight text-parchment-text mb-space-sm">${service.title}</h3>
         <p class="font-body-md text-body-md text-stone-muted">${service.description}</p>
       </div>
       <div class="pt-space-md border-t border-black/5 mt-space-md">
@@ -24,7 +24,7 @@ function renderService10(service10) {
             <span class="font-label-uppercase text-label-uppercase text-primary">SERVICE // 10</span>
             <span class="material-symbols-outlined text-primary">insights</span>
           </div>
-          <h3 class="font-headline-md text-[26px] leading-tight text-parchment-text mb-space-xs">${service10.title}</h3>
+          <h3 class="font-headline-md text-[22px] md:text-[26px] leading-tight text-parchment-text mb-space-xs">${service10.title}</h3>
           <p class="font-body-md text-body-md text-stone-muted">${service10.description}</p>
         </div>
         <div class="md:col-span-4 flex md:justify-end">
@@ -43,7 +43,7 @@ export function renderCoreServices(services, service10) {
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl gap-space-lg">
           <div>
             <div class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-widest">End-to-End Media Studio // Full Agency Suite</div>
-            <h2 class="font-headline-lg text-headline-lg text-parchment-text">Core Services</h2>
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-parchment-text">Core Services</h2>
           </div>
           <div class="max-w-md">
             <p class="font-body-md text-body-md text-stone-muted">

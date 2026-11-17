@@ -9,7 +9,7 @@ export function renderContact() {
               <span class="w-2 h-2 bg-primary"></span>
               <span>Start a Clipping &amp; Promotion Campaign</span>
             </div>
-            <h2 class="font-headline-lg text-headline-lg text-parchment-text mb-space-md">
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-parchment-text mb-space-md">
               Ready to Drive Viral Visibility Across Your Content?
             </h2>
             <p class="font-body-lg text-body-lg text-stone-muted max-w-xl mb-space-xl">

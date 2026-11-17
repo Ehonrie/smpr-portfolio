@@ -1,6 +1,6 @@
 export function renderHero() {
   return `
-    <section class="relative w-full bg-obsidian-base pt-space-2xl pb-space-4xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop overflow-hidden">
+    <section class="relative w-full bg-obsidian-base pt-space-xl md:pt-space-2xl pb-space-3xl md:pb-space-4xl px-margin-mobile md:px-margin-tablet lg:px-margin-desktop overflow-hidden">
       <div class="absolute -top-40 right-1/4 w-[580px] h-[580px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
       <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
         <div class="lg:col-span-8 flex flex-col">
@@ -8,10 +8,10 @@ export function renderHero() {
             <span class="w-2 h-2 bg-primary"></span>
             <span class="font-label-uppercase text-label-uppercase text-primary uppercase">CLIPPING &amp; CONTENT PROMOTION CAMPAIGNS · 200,000,000+ TOTAL VIEWS</span>
           </div>
-          <h1 class="font-headline-display text-headline-display text-parchment-text mb-space-lg max-w-4xl tracking-tight">
+          <h1 class="font-headline-display text-headline-lg-mobile sm:text-headline-display-mobile md:text-headline-lg lg:text-headline-display text-parchment-text mb-space-lg max-w-4xl tracking-tight break-words">
             Driving Visibility, Engagement &amp; Viral Reach Across Entertainment.
           </h1>
-          <p class="font-subheading-lg text-subheading-lg text-stone-muted max-w-2xl mb-space-2xl leading-relaxed">
+          <p class="font-subheading-lg text-[16px] leading-[26px] md:text-subheading-lg text-stone-muted max-w-2xl mb-space-xl md:mb-space-2xl">
             SM PR Group &amp; S&amp;C Media is a high-performance media studio specializing in clipping, short-form editing, and content promotion. We drive explosive visibility across TV, Animation, Music, Comedy, Influencers, and Brands.
           </p>
           <div class="flex flex-wrap items-center gap-space-md">
@@ -32,17 +32,17 @@ export function renderHero() {
             </div>
             <div class="grid grid-cols-1 gap-space-md">
               <div class="bg-surface-container-low p-space-md">
-                <div class="font-headline-display text-[52px] leading-none text-primary mb-1">200M+</div>
+                <div class="font-headline-display text-[40px] md:text-[52px] leading-none text-primary mb-1">200M+</div>
                 <div class="font-label-uppercase text-label-uppercase text-parchment-text">Total Campaign Views Delivered</div>
                 <div class="font-body-sm text-body-sm text-stone-muted mt-1">Short-form distribution &amp; clipping syndication</div>
               </div>
               <div class="grid grid-cols-2 gap-space-sm">
                 <div class="bg-surface-container-low p-space-md">
-                  <div class="font-headline-md text-headline-md text-secondary leading-none mb-1">5.8M+</div>
+                  <div class="font-headline-md text-[24px] md:text-headline-md text-secondary leading-none mb-1">5.8M+</div>
                   <div class="font-label-uppercase text-label-uppercase text-stone-muted text-[10px]">S&amp;C Clipping Views</div>
                 </div>
                 <div class="bg-surface-container-low p-space-md">
-                  <div class="font-headline-md text-headline-md text-secondary leading-none mb-1">10M+</div>
+                  <div class="font-headline-md text-[24px] md:text-headline-md text-secondary leading-none mb-1">10M+</div>
                   <div class="font-label-uppercase text-label-uppercase text-stone-muted text-[10px]">Organic TV Reach</div>
                 </div>
               </div>

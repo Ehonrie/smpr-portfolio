@@ -39,7 +39,7 @@ function renderTextBlock(study, orderClass) {
         <div class="flex items-center gap-space-xs mb-space-sm font-label-uppercase text-label-uppercase text-primary">
           <span>${study.category}</span><span>/</span><span>${study.viewsLabel}</span>
         </div>
-        <h3 class="font-headline-md text-headline-md text-parchment-text mb-space-md">${study.title}</h3>
+        <h3 class="font-headline-md text-[24px] leading-[30px] md:text-headline-md text-parchment-text mb-space-md">${study.title}</h3>
         <div class="bg-surface-container p-space-md mb-space-md">
           <div class="font-label-uppercase text-[10px] text-stone-muted uppercase tracking-wider mb-1">${study.executionLabel}</div>
           <p class="font-body-sm text-body-sm text-on-surface">${study.description}</p>
@@ -75,7 +75,7 @@ export function renderCaseStudies(caseStudies) {
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl gap-space-lg">
           <div>
             <div class="font-label-uppercase text-label-uppercase text-primary uppercase mb-space-xs tracking-widest">Selected Past Works // High Performance Media</div>
-            <h2 class="font-headline-lg text-headline-lg text-parchment-text">Master Case Studies</h2>
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-parchment-text">Master Case Studies</h2>
           </div>
           <div class="max-w-md">
             <p class="font-body-md text-body-md text-stone-muted">
